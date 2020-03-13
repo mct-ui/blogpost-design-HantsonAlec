@@ -66,6 +66,7 @@ h1 {
     font-size: 36px;
     line-height: 40px;
     margin: 0 0 24px;
+    font-family: 'Playfair Display', serif;
 }
 
 h2 {
@@ -243,7 +244,6 @@ a:focus {
         page-break-after: avoid;
     }
 }
-h1,
 h2,
 h3 {
     color: #17181a;
