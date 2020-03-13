@@ -7,8 +7,8 @@
 html {
     font-size: 16px;
     line-height: 1.5;
-    font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
-    color: #111;
+    font-family: 'Helvetica Neue', Helvetica, arial, sans-serif;
+    color: #5c6366;
     padding: 48px 24px 24px;
 }
 
@@ -25,7 +25,7 @@ body {
  */
 
 ::selection {
-    background: #e85e00;
+    background: #00e6a1;
     color: white;
     text-shadow: none;
 }
@@ -46,11 +46,8 @@ img {
     ---
     Default markup for typographic elements
 */
-
 h1 {
-    font-family: "Times New Roman", serif;
     font-size: 36px;
-    font-weight: normal;
     line-height: 40px;
     margin: 0 0 24px;
 }
@@ -100,7 +97,7 @@ blockquote {
     font-size: 23px;
     line-height: 32px;
     margin: 0 0 24px;
-    font-family: "Times New Roman", serif;
+    font-family: 'Times New Roman', serif;
 }
 
 blockquote * {
@@ -123,23 +120,24 @@ hr {
 }
 
 a {
-    color: RoyalBlue;
-    transition: all .1s ease-in-out;
+    color: #00a1e6;
+    transition: all 0.1s ease-in-out;
 }
 
 a:visited,
 a:active {
-    color: BlueViolet;
+    color: #00e6a1;
 }
 
 a:hover,
 a:focus {
-    color: Crimson;
+    color: #1abaff;
 }
 
 /* Small devices (landscape phones, 576px and up) */
 
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+}
 
 /* Medium devices (tablets, 768px and up) */
 
@@ -155,11 +153,13 @@ a:focus {
 
 /* Large devices (landscape tablets, desktops, 992px and up) */
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+}
 
 /*
     Print styles.
@@ -184,18 +184,18 @@ a:focus {
         text-decoration: underline;
     }
     a[href]:after {
-        content: " (" attr(href) ")";
+        content: ' (' attr(href) ')';
     }
     abbr[title]:after {
-        content: " (" attr(title) ")";
+        content: ' (' attr(title) ')';
     }
     /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
+    a[href^='#']:after,
+    a[href^='javascript:']:after {
+        content: '';
     }
     pre {
         white-space: pre-wrap !important;
@@ -226,4 +226,9 @@ a:focus {
     h3 {
         page-break-after: avoid;
     }
+}
+h1,
+h2,
+h3 {
+    color: #17181a;
 }
